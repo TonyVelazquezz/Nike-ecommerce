@@ -4,7 +4,7 @@ import { storeInitialState, storeReducer } from '../reducer/storeReducer';
 export const DataContext = createContext();
 
 const init = () => {
-	const state = localStorage.getItem('state');
+	const state = window.localStorage.getItem('state');
 	if (state) {
 		return JSON.parse(localStorage.getItem('state'));
 	} else {
@@ -16,7 +16,7 @@ export const DataProvider = ({ children }) => {
 	const [state, dispatch] = useReducer(storeReducer, storeInitialState, init);
 
 	useEffect(() => {
-		localStorage.setItem('state', JSON.stringify(state));
+		window.localStorage.setItem('state', JSON.stringify(state));
 	}, [state]);
 
 	return (

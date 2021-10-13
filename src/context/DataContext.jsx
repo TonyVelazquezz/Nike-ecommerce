@@ -1,20 +1,23 @@
-import React, { createContext, useReducer } from 'react';
-import { storeReducer, storeInitialState } from '../reducer/storeReducer';
+import React, { createContext, useEffect, useReducer } from 'react';
+import { storeInitialState, storeReducer } from '../reducer/storeReducer';
 
 export const DataContext = createContext();
 
-// const init = () => {
-// 	return JSON.parse(localStorage.getItem('state')) || [];
-// };
-
-// const storeLocalStorage = JSON.parse(localStorage.getItem('state') || []);
+const init = () => {
+	const state = localStorage.getItem('state');
+	if (state) {
+		return JSON.parse(localStorage.getItem('state'));
+	} else {
+		return [];
+	}
+};
 
 export const DataProvider = ({ children }) => {
-	const [state, dispatch] = useReducer(storeReducer, storeInitialState);
+	const [state, dispatch] = useReducer(storeReducer, storeInitialState, init);
 
-	// useEffect(() => {
-	// 	localStorage.setItem('state', JSON.stringify(state));
-	// }, [state]);
+	useEffect(() => {
+		localStorage.setItem('state', JSON.stringify(state));
+	}, [state]);
 
 	return (
 		<DataContext.Provider value={{ state, dispatch }}>

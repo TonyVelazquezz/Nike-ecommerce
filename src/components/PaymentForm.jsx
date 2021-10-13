@@ -42,6 +42,7 @@ const PaymentForm = () => {
 				focused={state.focus}
 				name={state.name}
 				number={state.number}
+				style={{ maxWidth: '10px' }}
 			/>
 			<form>
 				<div className="w-full pr-3 py-2">

@@ -27,7 +27,7 @@ const CheckoutPage = () => {
 					<PaymentForm />
 				</article>
 
-				<aside className="border  leading-10 mb-7 ml-4 mt-4 lg:w-1/3 w-full">
+				<aside className="border leading-10 mb-7 ml-4 mt-4 lg:w-1/3 w-full">
 					<h3 className="bg-gray-200 font-bold px-3">IN YOUR BAG</h3>
 
 					<div className="p-3">

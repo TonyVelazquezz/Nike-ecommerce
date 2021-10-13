@@ -4,9 +4,13 @@ const CartCheckoutItem = ({ data }) => {
 	const { min_img, name, price, quantity } = data;
 
 	return (
-		<div className="p-2 m-2 border-b w-full">
+		<div className="p-2 border-b w-full">
 			<div className="flex p-2 w-full">
-				<img src={min_img} alt="preview" className="mr-4 h-full" />
+				<img
+					src={min_img}
+					alt="preview"
+					className="pt-3 pr-4 h-full lg:max-w-full w-1/3"
+				/>
 
 				<div className="w-full">
 					<h4 className="">{name}</h4>

@@ -40,7 +40,7 @@ const CartPage = () => {
 			<hr />
 
 			<div className="flex justify-between flex-wrap break-words">
-				<article className="lg:w-2/3 pr-10 w-full">
+				<article className="lg:pr-10 lg:w-2/3 w-full">
 					{cart.map((item, index) => (
 						<CartItem
 							key={index}

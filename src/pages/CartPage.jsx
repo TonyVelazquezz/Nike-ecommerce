@@ -10,23 +10,23 @@ const CartPage = () => {
 
 	const { cart } = state;
 
-	const deleteFromCart = id => {
-		dispatch({ type: Types.RESTORE_STOCK, payload: id });
-		dispatch({ type: Types.REMOVE_FROM_CART, payload: id });
+	const deleteFromCart = uid => {
+		dispatch({ type: Types.RESTORE_STOCK, payload: uid });
+		dispatch({ type: Types.REMOVE_FROM_CART, payload: uid });
 	};
 
 	// const clearCart = () => {
 	// 	dispatch({ type: Types.CLEAR_CART });
 	// };
 
-	const increaseQuantity = id => {
-		dispatch({ type: Types.INCREASE_QUANTITY, payload: id });
-		dispatch({ type: Types.SUBTRACT_STOCK, payload: id });
+	const increaseQuantity = uid => {
+		dispatch({ type: Types.INCREASE_QUANTITY, payload: uid });
+		dispatch({ type: Types.SUBTRACT_STOCK, payload: uid });
 	};
 
-	const decreaseQuantity = id => {
-		dispatch({ type: Types.DECREASE_QUANTITY, payload: id });
-		dispatch({ type: Types.ADD_STOCK, payload: id });
+	const decreaseQuantity = uid => {
+		dispatch({ type: Types.DECREASE_QUANTITY, payload: uid });
+		dispatch({ type: Types.ADD_STOCK, payload: uid });
 	};
 
 	const totalCart = cart.reduce(

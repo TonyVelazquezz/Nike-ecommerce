@@ -1,11 +1,11 @@
 import React from 'react';
 
 const ProductItem = ({ data, addToCart }) => {
-	const { id, img, name, price, stock } = data;
+	const { uid, img, name, price, stock } = data;
 
 	return (
 		<div className="p-2 m-2">
-			<img src={img} alt="" />
+			<img src={img[0].url} alt="" />
 			<h4 className="">{name}</h4>
 			{stock > 0 ? (
 				<h5 className="font-bold">
@@ -21,7 +21,7 @@ const ProductItem = ({ data, addToCart }) => {
 
 			<p className="text-left">
 				<button
-					onClick={() => addToCart(id)}
+					onClick={() => addToCart(uid)}
 					className="btn-checkout bg-black rounded-full text-white px-10 py-1 mt-2"
 				>
 					Add to Bag

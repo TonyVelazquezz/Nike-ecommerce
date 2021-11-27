@@ -3,7 +3,7 @@
 const productsObject = {
 	products: [
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51579941171_863da8d492_z.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51580614404_ef4cf5e36b_q.jpg',
 		// 	name: 'Club América',
@@ -11,7 +11,7 @@ const productsObject = {
 		// 	stock: 9,
 		// },
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51579941171_863da8d492_z.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51580614404_ef4cf5e36b_q.jpg',
 		// 	name: 'Nike Sportswear Collection Essentials',
@@ -19,7 +19,7 @@ const productsObject = {
 		// 	stock: 8,
 		// },
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51579121267_e484d5769e_z.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51579941071_2144df4577_q.jpg',
 		// 	name: 'Nike Sportswear Sport Essentials +',
@@ -27,7 +27,7 @@ const productsObject = {
 		// 	stock: 5,
 		// },
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51580851075_d7fb5b1e06.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51580169223_b423555444_q.jpg',
 		// 	name: 'Nike Sportswear Club Essential',
@@ -35,7 +35,7 @@ const productsObject = {
 		// 	stock: 4,
 		// },
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51580851180_328e4ffb82.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51579121387_514390f8dd_q.jpg',
 		// 	name: 'Nike Air Huarache',
@@ -43,7 +43,7 @@ const productsObject = {
 		// 	stock: 1,
 		// },
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51580614309_1d36374a6c.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51580614289_b5ce4e5716_q.jpg',
 		// 	name: 'Nike Sportswear Tech Fleece',
@@ -51,7 +51,7 @@ const productsObject = {
 		// 	stock: 2,
 		// },
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51580169323_dba67ca58d_z.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51580614444_16ca200540_q.jpg',
 		// 	name: 'Nike Elite Pro',
@@ -59,7 +59,7 @@ const productsObject = {
 		// 	stock: 4,
 		// },
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51580614359_1ccae199d9_z.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51580169208_cde7ed601d_q.jpg',
 		// 	name: 'Nike Sportswear KP DNA',
@@ -67,7 +67,7 @@ const productsObject = {
 		// 	stock: 5,
 		// },
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51580169383_afe3defc98.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51580169373_b5c3c27d0b_q.jpg',
 		// 	name: 'Jordan 6 Rings',
@@ -75,7 +75,7 @@ const productsObject = {
 		// 	stock: 2,
 		// },
 		// {
-		// 	uid: uuidv4(),
+		// 	id: uuidv4(),
 		// 	img: 'https://live.staticflickr.com/65535/51580851165_1f77cd0451_z.jpg',
 		// 	min_img: 'https://live.staticflickr.com/65535/51579121367_03d0b39e79_q.jpg',
 		// 	name: 'Nike Dri-FIT One Luxe',

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProductItem = ({ data, addToCart }) => {
-	const { uid, img, name, price, stock } = data;
+	const { id, img, name, price, stock } = data;
 
 	return (
 		<div className="p-2 m-2">
@@ -21,7 +21,7 @@ const ProductItem = ({ data, addToCart }) => {
 
 			<p className="text-left">
 				<button
-					onClick={() => addToCart(uid)}
+					onClick={() => addToCart(id)}
 					className="btn-checkout bg-black rounded-full text-white px-10 py-1 mt-2"
 				>
 					Add to Bag

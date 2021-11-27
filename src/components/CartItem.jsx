@@ -7,7 +7,7 @@ const CartItem = ({
 	increaseQuantity,
 	decreaseQuantity,
 }) => {
-	const { uid, min_img, name, price, quantity } = data;
+	const { id, min_img, name, price, quantity } = data;
 
 	return (
 		<div className="border-b pb-2 pt-4 px-2 w-full">
@@ -26,24 +26,24 @@ const CartItem = ({
 					<div className="flex gap-2 items-center text-gray-500 ">
 						<h3>Quantity</h3>
 						<MdKeyboardArrowDown
-							onClick={() => decreaseQuantity(uid)}
+							onClick={() => decreaseQuantity(id)}
 							className="cursor-pointer"
 						/>
 						{quantity}
 						<MdKeyboardArrowUp
-							onClick={() => increaseQuantity(uid)}
+							onClick={() => increaseQuantity(id)}
 							className="cursor-pointer"
 						/>
 					</div>
 
 					<button
-						// onClick={() => deleteFromCart(uid)}
+						// onClick={() => deleteFromCart(id)}
 						className="btn text-gray-600 pr-3 py-1 underline"
 					>
 						Move to favorites
 					</button>
 					<button
-						onClick={() => deleteFromCart(uid)}
+						onClick={() => deleteFromCart(id)}
 						className="btn text-gray-600 pr-3 py-1 underline"
 					>
 						Remove

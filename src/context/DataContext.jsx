@@ -19,7 +19,7 @@ export const DataProvider = ({ children }) => {
 	useEffect(() => {
 		const handleFetchData = async () => {
 			try {
-				const API = 'https://nike-ecommerce.herokuapp.com/nikes';
+				const API = 'https://strapi-e-commerce.herokuapp.com/products';
 				const response = await fetch(API);
 				const payload = await response.json();
 				dispatch({ type: Types.ADD_PRODUCTS, payload });

@@ -7,7 +7,7 @@ const CartCheckoutItem = ({ data }) => {
 		<div className="p-2 border-b w-full">
 			<div className="flex p-2 w-full">
 				<img
-					src={min_img}
+					src={min_img[0].url}
 					alt="preview"
 					className="pt-3 pr-4 h-full lg:max-w-full w-1/3"
 				/>
